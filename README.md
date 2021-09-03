@@ -24,10 +24,11 @@
 ### Requirements
 1. [Nmap](https://nmap.org/download.html)
    
-2. [Naabu](https://github.com/projectdiscovery/naabu)
+2. [Naabu](https://github.com/projectdiscovery/naabu#installation-instructions)
 
-```
-# naabu requires **go1.14+** to install successfully. Run the following command to get the repo 
 
-▶ GO111MODULE=on go get -u -v github.com/projectdiscovery/naabu/v2/cmd/naabu
+Before installing naabu, make sure to install `libpcap` library with `apt install -y libpcap-dev` on Linux
+
+```sh
+GO111MODULE=on go get -v github.com/projectdiscovery/naabu/v2/cmd/naabu
 ```
